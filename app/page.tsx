@@ -1,14 +1,11 @@
-import { Card, Metric, Text } from '@tremor/react'
-import Image from 'next/image'
+import Navbar from '@/components/Navbar'
+import { SignIn } from '@clerk/nextjs'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-center items-center">
+    <main className="flex min-h-screen justify-between items-center">
       Puroflow App
-      <Card className="max-w-xs mx-auto">
-        <Text>Sales</Text>
-        <Metric>$ 34,743</Metric>
-      </Card>
+      <SignIn afterSignInUrl={"/dashboard"} />
     </main>
   )
 }
