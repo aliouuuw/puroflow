@@ -15,7 +15,7 @@ import {
 
 export default function Dashboard() {
     return (
-        <main className="py-12 pb-12">
+        <main className="py-4">
             <Title>Dashboard</Title>
             <Text>Project an Team stats will be shown here</Text>
 
